@@ -10,6 +10,9 @@ gem 'pry'
 gem 'factory_girl_rails'
 gem 'capybara'
 gem 'devise'
+gem 'sass-rails'
+gem 'bootstrap-sass'
+
 
 group :development do
   gem 'better_errors'
