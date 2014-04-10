@@ -9,6 +9,9 @@
     <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <% if user_signed_in? %>
+        <li><%= link_to 'Dashboard', dashboard_path(current_user.id), :class => 'active' %></li>
+      <% end %>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
