@@ -10,7 +10,7 @@ gem 'turbolinks'
 gem 'pry'
 gem 'factory_girl_rails'
 gem 'capybara'
-gem 'bootflat-rails'
+gem 'devise'
 
 group :development do
   gem 'better_errors'
