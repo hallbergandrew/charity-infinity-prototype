@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'pg'
-gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -11,6 +10,9 @@ gem 'pry'
 gem 'factory_girl_rails'
 gem 'capybara'
 gem 'devise'
+gem 'bootflat-rails'
+gem 'sass', "~> 3.3.4"
+gem 'sass-rails', :git => 'https://github.com/zakelfassi/sass-rails'
 
 group :development do
   gem 'better_errors'

@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/zakelfassi/sass-rails
+  revision: 0d4013878dd18440c98da4ffa62208e7700f2477
+  specs:
+    sass-rails (4.0.2)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.3.4)
+      sprockets (~> 2.8, <= 2.11.0)
+      sprockets-rails (~> 2.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,6 +42,8 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootflat-rails (0.1.0)
+      sass (~> 3.2)
     builder (3.1.4)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -116,12 +128,7 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    sass (3.2.19)
-    sass-rails (4.0.3)
-      railties (>= 4.0.0, < 5.0)
-      sass (~> 3.2.0)
-      sprockets (~> 2.8, <= 2.11.0)
-      sprockets-rails (~> 2.0)
+    sass (3.3.4)
     shoulda-matchers (2.5.0)
       activesupport (>= 3.0.0)
     slop (3.5.0)
@@ -157,6 +164,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bootflat-rails
   capybara
   coffee-rails
   devise
@@ -167,7 +175,8 @@ DEPENDENCIES
   quiet_assets
   rails
   rspec-rails
-  sass-rails
+  sass (~> 3.3.4)
+  sass-rails!
   shoulda-matchers
   turbolinks
   uglifier
