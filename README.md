@@ -1,9 +1,7 @@
 # Charity Infinity
 
-* Extend User to have more properties
- * Name
- * Address
- * Phone
+##To-Do
+* One page for editing email and password and personal information
 * Confirmation for new user sign ups
 * Admins
 
