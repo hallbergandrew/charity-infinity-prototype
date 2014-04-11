@@ -9,3 +9,5 @@
 
 ### Future Plans
 * Add stripe to accept donations
+
+When using the launchy gem, add save_and_open_page where you want the page to open
