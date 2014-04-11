@@ -1,4 +1,7 @@
 CharityInfinityPrototype::Application.routes.draw do
+  authenticated :user do
+    root :to => 'dashboard#show', :as => :authenticated_root
+  end
   root 'landing#index'
   devise_for :users
   resources :dashboard
