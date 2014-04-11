@@ -12,6 +12,7 @@ gem 'capybara'
 gem 'devise'
 gem 'sass-rails'
 gem 'bootstrap-sass'
+gem 'therubyracer'
 
 
 group :development do
