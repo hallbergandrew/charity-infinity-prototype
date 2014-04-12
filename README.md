@@ -1,6 +1,7 @@
 # Charity Infinity
 
 ##To-Do
+* prompt users to fill in profile on first log in 
 * One page for editing email and password and personal information
 * Confirmation for new user sign ups
 * Admins
