@@ -1,10 +1,9 @@
 # Charity Infinity
 
-* Extend User to have more properties
- * Name
- * Address
- * Phone
-* Confirmation for new user sign ups
+##ToDo
+* prompt users to fill in profile on first log in 
+* One page for editing login info and personal info
+* User confirmations, lockouts, and timeouts
 * Admins
 
 ### Future Plans
