@@ -1,7 +1,8 @@
 <h1> Welcome to your dashboard </h1>
-
+<% if @user.photo != nil %>
+  <%= image_tag @user.photo.url(:thumb) %><br>
+<% end %>
 <%= link_to "Edit Profile Info", edit_profile_path(@profile), :class => "btn btn-default btn-sm"%>
 
 <%= link_to "Upload a Photo", edit_user_path(@user), :class => "btn btn-default btn-sm"%>
 
-<%= image_tag @user.photo.url(:thumb) %>
