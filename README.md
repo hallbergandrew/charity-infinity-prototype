@@ -1,8 +1,9 @@
 # Charity Infinity
 
-##To-Do
-* One page for editing email and password and personal information
-* Confirmation for new user sign ups
+##ToDo
+* prompt users to fill in profile on first log in 
+* One page for editing login info and personal info
+* User confirmations, lockouts, and timeouts
 * Admins
 
 ### Future Plans

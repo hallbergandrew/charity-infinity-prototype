@@ -12,14 +12,14 @@ class ProfileController < ApplicationController
     @profile = Profile.find(params[:id])
     if @profile.update(params_profile)
       flash[:notice] = "Profile updated."
-      redirect_to profile_path
+      redirect_to dashboard_path
     else
       render 'edit'
     end
   end
 
-
   private
+  
   def params_profile
     params.require(:profile).permit(:name, :street, :city, :state, :zip, :phone)
   end
