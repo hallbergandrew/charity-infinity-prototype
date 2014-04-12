@@ -13,6 +13,8 @@ gem 'devise'
 gem 'sass-rails'
 gem 'bootstrap-sass'
 gem 'therubyracer'
+gem 'paperclip', "~> 4.1"
+
 
 
 group :development do
