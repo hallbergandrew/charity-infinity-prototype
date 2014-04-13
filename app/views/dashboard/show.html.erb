@@ -1,4 +1,4 @@
 <h1> Welcome to your dashboard </h1>
-<% if @user.photo != nil %>
-  <%= image_tag @user.photo.url(:thumb) %><br>
+<% if @user.photo.exists? %>
+  <%= image_tag @user.photo.url(:thumb) %>
 <% end %>
