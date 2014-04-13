@@ -2,7 +2,6 @@
 
 ##ToDo
 * prompt users to fill in profile on first log in 
-* One page for editing login info and personal info
 * User confirmations, lockouts, and timeouts
 * Admins
 

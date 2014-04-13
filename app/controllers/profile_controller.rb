@@ -19,7 +19,7 @@ class ProfileController < ApplicationController
   end
 
   private
-  
+
   def params_profile
     params.require(:profile).permit(:name, :street, :city, :state, :zip, :phone)
   end
