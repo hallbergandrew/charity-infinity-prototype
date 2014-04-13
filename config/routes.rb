@@ -3,9 +3,10 @@ CharityInfinityPrototype::Application.routes.draw do
     root :to => 'dashboard#show', :as => :authenticated_root
   end
   root 'landing#index'
-  devise_for :users
+  devise_for :users ,:controllers => { :registrations => "registrations" }
   resources :dashboard
   resources :profile
+  resources :users
 
 
   # The priority is based upon order of creation: first created -> highest priority.
