@@ -2,4 +2,3 @@
 <% if @user.photo != nil %>
   <%= image_tag @user.photo.url(:thumb) %><br>
 <% end %>
-<%= link_to "Edit Profile", profile_path(@profile), :class => "btn btn-default btn-sm"%>
