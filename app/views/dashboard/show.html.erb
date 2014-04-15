@@ -1,5 +1,5 @@
 <%= content_for(:title, "Dashboard") %>
 <h1> Welcome to your dashboard </h1>
-<% if @user.photo.exists? %>
-  <%= image_tag @user.photo.url(:thumb) %>
+<% if current_user.photo.exists? %>
+  <%= image_tag current_user.photo.url(:thumb) %>
 <% end %>
