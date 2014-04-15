@@ -1,24 +1,25 @@
 class UsersController < ApplicationController
-def edit
-  @user = User.find(params[:id])
-end
+  before_filter :find_user
 
-def update
-  @user = User.find(params[:id])
-  @user.update(user_params)
-  respond_to do |format|
-    format.html { redirect_to profile_path }
-    format.js
+  def edit
   end
-end
 
-private
+  def update
+    @user.update(user_params)
+    respond_to do |format|
+      format.html { redirect_to profile_path }
+      format.js
+    end
+  end
 
-# Use strong_parameters for attribute whitelisting
-# Be sure to update your create() and update() controller methods.
+  private
 
-def user_params
-  params.require(:user).permit(:photo)
-end
+  def find_user
+    @user = User.find(params[:id])
+  end
+
+  def user_params
+    params.require(:user).permit(:photo)
+  end
 
 end

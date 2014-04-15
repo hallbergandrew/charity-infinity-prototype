@@ -1,15 +1,12 @@
 class ProfileController < ApplicationController
-
+  before_filter :find_profile
   def show
-    @profile = Profile.find(params[:id])
   end
 
   def edit
-    @profile = Profile.find(params[:id])
   end
 
   def update
-    @profile = Profile.find(params[:id])
     @profile.update(params_profile)
     respond_to do |format|
       format.html { redirect_to profile_path }
@@ -18,6 +15,10 @@ class ProfileController < ApplicationController
   end
 
   private
+
+  def find_profile
+    @profile = Profile.find(params[:id])
+  end
 
   def params_profile
     params.require(:profile).permit(:name, :street, :city, :state, :zip, :phone)
