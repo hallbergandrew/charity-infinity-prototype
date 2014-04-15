@@ -7,10 +7,10 @@ end
 
 def update
   @user = User.find(params[:id])
-  if @user.update(user_params)
-    redirect_to dashboard_path
-  else
-    render 'edit'
+  @user.update(user_params)
+  respond_to do |format|
+    format.html { redirect_to profile_path }
+    format.js
   end
 end
 

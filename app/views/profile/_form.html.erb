@@ -1,8 +1,7 @@
-<%= content_for(:title, "Edit Profile") %>
-<h1> Edit Personal Information </h1>
+<h3> Edit Personal Information </h3>
+<div id="update_profile">
 <%= render("layouts/errors", :object => @profile) %>
-
-<%= form_for(@profile) do |f| %>
+<%= form_for(@profile, remote: true) do |f| %>
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -29,5 +28,5 @@
   </div>
   <%= f.submit(:class => "btn btn-success") %>
 <% end %><br>
-
-<%= link_to "Back", :back %>
+<%= link_to "Cancel", :back %>
+</div>

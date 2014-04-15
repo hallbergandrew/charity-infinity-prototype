@@ -10,11 +10,10 @@ class ProfileController < ApplicationController
 
   def update
     @profile = Profile.find(params[:id])
-    if @profile.update(params_profile)
-      flash[:notice] = "Profile updated."
-      redirect_to dashboard_path
-    else
-      render 'edit'
+    @profile.update(params_profile)
+    respond_to do |format|
+      format.html { redirect_to profile_path }
+      format.js
     end
   end
 

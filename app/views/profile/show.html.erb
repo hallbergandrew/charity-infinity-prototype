@@ -1,4 +1,4 @@
 
-<%= link_to "Upload a Photo", edit_user_path, :class => "btn btn-default btn-sm"%><br><br>
-<%= link_to "Edit Personal Information", edit_profile_path(@profile), :class => "btn btn-default btn-sm"%><br><br>
-<%= link_to "Edit Email and Password", edit_user_registration_path, :class => "btn btn-default btn-sm" %><br><br>
+<%= link_to "Upload a Photo", edit_user_path, :class => "btn btn-default btn-sm", id: "new_photo", remote: true %><br><br>
+<%= link_to "Edit Personal Information", edit_profile_path(@profile), :class => "btn btn-default btn-sm", id: "edit_personal", remote: true %><br><br>
+<%= link_to "Edit Email and Password", edit_user_registration_path, :class => "btn btn-default btn-sm", id: "edit_registration", remote: true %><br><br>
