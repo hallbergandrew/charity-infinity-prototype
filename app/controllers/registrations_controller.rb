@@ -1,7 +1,10 @@
 class RegistrationsController < Devise::RegistrationsController  
-  def edit
-  	@user = current_user
-    @profile = Profile.find(@user.id)
+  def update
     super
+    respond_to do |format|
+      format.html { redirect_to profile_path(@profile) }
+      format.js
+      return
+    end
   end
 end
