@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
-
 def edit
   @user = User.find(params[:id])
-  @profile = Profile.find(params[:id])
 end
 
 def update
