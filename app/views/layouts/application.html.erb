@@ -10,6 +10,7 @@
     <ul class="nav navbar-nav active">
       <li><a href="/">Home</a></li>
       <% if user_signed_in? %>
+         <% @profile = Profile.find(current_user.id) %>
         <li><%= link_to "My Profile", profile_path(@profile)%></li>
       <% end %>
     </ul>
