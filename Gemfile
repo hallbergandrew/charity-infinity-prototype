@@ -15,6 +15,9 @@ gem 'bootstrap-sass'
 gem 'therubyracer'
 gem 'paperclip', "~> 4.1"
 
+group :production do
+  gem 'rails_12factor'
+
 
 
 group :development do
