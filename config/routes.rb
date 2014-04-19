@@ -9,6 +9,7 @@ CharityInfinityPrototype::Application.routes.draw do
   resources :users
   resources :funds
   resources :charities
+  resources :emails
 
 
   # The priority is based upon order of creation: first created -> highest priority.

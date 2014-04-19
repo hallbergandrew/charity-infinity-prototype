@@ -1,0 +1,9 @@
+<form class="form-inline" role="form">
+      <div class="form-group">
+        <%= form_for @email do |f| %>
+          <%= f.label :email, :class => "sr-only"%>
+          <%= f.text_field :email, :class => "form-control", :placeholder => "Email", autofocus: true %>
+      </div>
+          <%= f.submit "Add Email", :class => "btn btn-info btn-lg" %>
+        <% end %>
+    </form>

@@ -2,7 +2,10 @@
 <div class="call-to-action">
   <div class="jumbotron">
      <h1> Have you ever wanted to change the world? </h1>
-      <h3> Charity infinity strives to utilize the power of crowd sourcing in order </h3>
+      <h3> Charity infinity strives to utilize the power of crowd sourcing in order to better serve all people, while supporting charities we care about. </h3></br>
+      <h3> If you are interested in furthering our cause: </h3> </br>
+      <%= render "email" %>
+      <img align="right" src="https://playmob.com/assets/charity/icon-charity-sign-up.png" alt="..." class="img-rounded">
   </div>
 </div>
 
@@ -29,7 +32,7 @@
 
 <div class="join">
   <div class="jumbotron">
-      <%= link_to "Join Now", new_user_registration_path, :class => "btn btn-info btn-lg" %>
+    <%= render "email" %>
   </div>
 </div>
 
